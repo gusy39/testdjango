@@ -4,12 +4,12 @@
 </title>
 </head>
 <body>
-demo奈文摩尔
-<ul>
-{% for i in list %}
-<li> 
-{{ i }}
-</li>
+<table>
+<thead><tr><th>ID</th><th>NAME</th></tr></thead>
+<tbody>
+{% for person in list %}
+<tr><td>{{ person.id }}</td><td>{{ person.pname }}</td></tr>
 {% endfor %}
+</tbody>
 </body>
 </html>
